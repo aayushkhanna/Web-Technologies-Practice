@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript slicing Arrays </title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<p id ="demo1"></p>
+	<p id ="demo2"></p>
+	<p id ="demo3"></p>
+	<p id ="demo4"></p>
+	<p id ="demo5"></p>
+	<p id ="demo6"></p>
+	<p id ="demo7"></p>
+	<script>
+		var fruits = ["Apple", "Orange","Pear","PineApple","Grape","Mango"];
+		var vegetables =["Spinach" , "Colliflower" , "Tomato","Cheese"];
+		fruits.slice(2,0,"Lemon","Banana")
+		document.getElementById("demo").innerHTML = fruits.join("*");
+	    fruits.sort();
+	    document.getElementById("demo1").innerHTML = fruits;
+	    fruits.reverse();
+	    document.getElementById("demo2").innerHTML = fruits;
+	    var combined = vegetables.concat(fruits);
+	    document.getElementById("demo3").innerHTML = combined;
+	</script>
+</body>
+</html>

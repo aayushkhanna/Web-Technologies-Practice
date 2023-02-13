@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>CSS TABLES</title>
+	<style>
+		.pos{
+			border-collapse: collapse;
+			caption-side: top;
+			border-bottom-color: red;
+			border-top-color:blue;
+			border-left-color: green;
+			border-right-color:pink;
+			border-right-style: hidden;
+		  }
+		 #para{
+		  	
+		  	border-collapse: separate;
+		  	caption-side: bottom;
+		  	border-bottom-style: none;
+		  	border-top-style: solid;
+		  	border-left-style: dashed;
+		  	border-right-style: double;
+		  }
+		 .para{
+		 	border-spacing: 10px 50px;
+		 	width: 400px;
+		 	border-bottom-style:groove;
+		 	border-top-style:ridge;
+		 	border-left-style: inset;
+		 	border-right-style: outset;
+		 	}
+	</style>
+</head>
+<body>
+	<table class ="pos" border ="2">
+		<caption class ="top"> This caption will appear at the top </caption>
+		<tr>
+			<td> HTML </td>
+			<td> CSS </td>
+		</tr>
+		<tr>
+			<td> Javascript</td>
+			<td> PHP </td>
+		</tr>
+	</table>
+	<br>
+	<table id ="para" border ="2">
+		<caption class ="bottom">This caption will appear at the bottum</caption>
+		<tr>
+			<td> AJAX </td>
+			<td> Cookies </td>
+		</tr>
+		<tr>
+			<td>DOM </td>
+			<td> WWW </td>
+		</tr>
+	</table>
+	<br><br>
+	<table class ="para" border ="2">
+		<tr>
+			<td> RDBMS </td>
+			<td> Python </td>
+		</tr>
+		<tr>
+			<td>JAVA </td>
+			<td> C</td>
+		</tr>
+	</table>
+</body>
+</html>

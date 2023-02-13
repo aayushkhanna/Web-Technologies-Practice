@@ -1,0 +1,65 @@
+<html>
+<body>
+<h2 align ="Center"> To illustrate Form Based tags </h2>
+<hr>
+<form action ="filename.php">
+    <br>
+	<div>
+		<label>This is a text box to enter any text: </label>
+		<input type="text" name="TextBox" placeholder="Enter any text">
+    </div>
+		<br>
+	<div>
+		<label>This is a text box to enter password:</label>
+		<input type ="password" name="passwordfield" placeholder="Enter password" >
+	</div>
+		<br>
+	<div>
+		<label>This is area to enter large text:</label> 
+		<textarea>  </textarea>
+	</div>
+		<br>
+	<div>
+		<label>This is a button:</label> 
+		<input type ="button" name="button" value ="click">
+	</div>
+		<br>
+		<label><b><u> Radio Options </b></u></label>
+		<br>
+		<table border ="0">
+			<tr>
+				<td>
+					<input type ="radio" name ="choose" value ="Yes" checked>Yes
+				</td>
+				<td>
+		            <input type ="radio" name ="choose" value="No" > No
+		         </td>
+           </tr>
+        </table>
+        <br>
+        <b><u> Checkbox Options </b></u>
+        <br>
+        <table border ="0">
+        	<tr>
+        		<td>
+        			<input type ="checkbox" name ="Day1" value="Sunday">Sunday
+		        </td>
+		        <td>
+		        	<input type ="checkbox" name="Day2" value ="Monday">Monday
+		        </td>
+		        <td>
+			        <input type="checkbox" name="Day3" value ="Tuesday">Tuesday
+		        </td>
+	        </tr>
+        </table>
+        <br>
+    <div>
+    	<label for ="car"><u><b>Menu Driven Options</b></u></label>
+    	<select id="cars">
+    		<option value ="Volvo">Volvo</option>
+    		<option value ="Saab">Saab</option>
+    		<option value ="Opel">Opel</option>
+    		<option value ="Audi">Audi</option>
+    	</select>
+</body>
+</html>

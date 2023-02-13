@@ -1,0 +1,50 @@
+<html>
+<head>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 100;
+		}
+		th,td{
+			text-align:left;
+			padding: 8px;
+		}
+		tr:nth-child(even){
+			background-color: green;
+		}
+		tr:nth-child(odd){
+			background-color:blue;
+		}
+		tr:hover{
+		          color:yellow;
+	           }
+	    ::selection{
+		      	background-color:white;
+		}
+    </style>
+</head>
+<body>
+	<table border ="2">
+		<tr onMouseOver="this.className = 'highlight'" onMouseOut="this.className='normal'"> 
+			<th> Name </th>
+			<th> class </th>
+			<th> sub </th>
+		</tr>
+		<tr>
+			<td> aayush </td>
+			<td> btech </td>
+			<td> java </td>
+		</tr>
+		<tr>
+			<td> abha </td>
+			<td> btech </td>
+			<td> dcld </td>
+		</tr>
+		<tr>
+			<td> anjali </td>
+			<td> btech </td>
+			<td> oops </td>
+		</tr>
+	</table>
+</body>
+</html>

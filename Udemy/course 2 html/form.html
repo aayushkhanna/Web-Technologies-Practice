@@ -1,0 +1,92 @@
+<html>
+<body>
+	<form name="Employment">
+		<fieldset>
+			<legend>Details</legend>
+		<table width=600 border="0" cellpadding ="2" cellpadding="2">
+			<tr>
+				<td>Employeement Application</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>Position</td>
+				<td><select name="Position" size="1" >
+					<option value="Ac">Accountant</option>
+					<option value="Re">Receptionist</option>
+					<option value="Ad">Administrator</option>
+					<option value="Su">SuperVisor</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Experience</td>
+				<td><select name="Position">
+					<option value="EL">Entry Level</option>
+					<option value="SE">Some Experience</option>
+					<option value="VE">Very Experienced</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Job Type</td>
+				<td><input type ="checkbox" name="cb"/>Full Time</td>
+				<td><input type="checkbox" name="cb2"/>Part Time</td>
+				<td><input type="checkbox" name="cb3"/>Contact</td>
+			</tr>
+			<tr>
+				<td>Employeemnet Status</td>
+				<td><input type ="radio" name ="estatus" value ="employed"/>Employeed</td>
+				<td><input type ="radio" name ="estatus" value ="unemployed"/>Unemployeed</td>
+				<td><input type ="radio" name ="estatus" value ="student"/>Student</td>
+			</tr>
+			<tr>
+				<td>Additional Comments</td>
+				<td><textarea name="Comments" cols="45" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="submit"/></td>
+					<td><input type="reset" name="reset" value="reset"/>
+					</td>
+					<td><button type="button" onclick="alert('Hello World!')">Click Me!</button></td>
+			</tr>
+			<tr>
+				<td>Social Media</td>
+				<td><input list="Social Sites" name="Social Sites">
+					<datalist id="Social Sites">
+					<option value="Facebook"></option>
+					<option value ="Instagram"></option>
+					<option value ="Whatsapp"></option>
+				    </datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" id="password" name="password"></td>
+			</tr>
+            <tr>
+            	<td>DOB</td>
+            	<td><input type="date" id="Birthday" name="Birthday"></td>
+            </tr>
+            <tr>
+            	<td>Add Date After 01-Jan-2017</td>
+            	<td><input type="date" id="datemin" name="datemin" min="2017-01-01"></td>
+            	<td>Add Date Before 01-Jan-2017</td>
+            	<td><input type="date" id="datemax" name="datemax" max="2020-01-23"></td>
+            	<td>Email:</td>
+            	<td><input type ="Email" id="email" name="email"></td>
+            	<td><label for="myfile">Choose a file:</label></td>
+            	<td><input type="file" id="Myfile" name="myfile"></td>
+            	<td>Input Number</td>
+            	<td><input type="Number" name="Age" min="18" max="50">
+            </tr>
+		</table>
+	</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<body>
+	<p id = "demo"></p>
+	<p id ="demo1"></p>
+	<p id ="demo2"></p>
+	<p id ="demo3"></p>
+	<p id ="demo4"></p>
+	<p id ="demo5"></p>
+	<p id ="demo6"></p>
+<script> 
+	// concatinating two strings
+	var studentName1 = "Aayush Khanna";
+	var studentName2 = "Aarush Khanna";
+
+	document.getElementById("demo").innerHTML = studentName2 + "<br>" + studentName1;
+</script>
+<script>
+	// concatinating three strings
+	var line1 = "It all started with a dream";
+	var line2 = "He is called 'Mad'";
+	var line3 = 'He is called "Xavier"';
+    
+	document.getElementById("demo").innerHTML = line1 + "<br>" + "<br>" + line2 + "<br>" + line3;
+	document.write(line1.length);
+</script> 
+<br>
+<script>
+	// length of string
+	var line3 = "He is called \"Xavier\"";
+	document.write(line3.length);
+	document.getElementById("demo").innerHTML = line3;
+</script>
+<br>
+<script>
+	//finding first index of string
+	var str = "Please locate where 'locate' occurs!";
+    var pos = str.indexOf("locate");
+    document.getElementById("demo1").innerHTML = pos;
+</script>
+<br>
+<script>
+	//finding last index of string
+	var str = "Please locate where 'locate' occurs!";
+    var pos = str.lastIndexOf("locate");
+    document.getElementById("demo2").innerHTML = pos;
+</script>
+<br>
+<script>
+	//searching for a string
+	var str = "Please locate where 'locate' occurs!";
+    var pos = str.search("locate");
+    document.getElementById("demo3").innerHTML = pos;
+</script>
+<!--------------String Slicing ---------------->
+<script>
+var str = "AppleBananaKiwi";
+var res = str.slice(7,13);
+document.getElementById("demo4").innerHTML = res; 
+</script>
+<script>
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(-12,-6);
+var res = str.substr(7,6);
+document.getElementById("demo6").innerHTML = res;
+document.getElementById("demo5").innerHTML = res;
+</script>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo7">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo7").innerHTML; 
+  var txt = str.replace("Microsoft","W3Schools");
+  document.getElementById("demo7").innerHTML = txt;
+}
+</script>
+</body>
+</html>

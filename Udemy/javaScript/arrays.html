@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Arrays </title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<p id ="demo1"></p>
+	<p id ="demo2"></p>
+	<p id ="demo3"></p>
+	<p id ="demo4"></p>
+	<p id ="demo5"></p>
+	<p id ="demo6"></p>
+	<p id ="demo7"></p>
+	<script>
+		var fruits = ["Apple", "Orange","Pear","PineApple","Grape"];
+		document.getElementById("demo").innerHTML = fruits[2];
+		document.getElementById("demo2").innerHTML = fruits.length;
+		document.getElementById("demo1").innerHTML = fruits.join(" * ");
+		fruits.shift();
+		document.getElementById("demo3").innerHTML = fruits.join("*");
+		fruits.push("cherry");
+		document.getElementById("demo3").innerHTML = fruits.join("*");
+		fruits.unshift("banana");
+		document.getElementById("demo4").innerHTML = fruits.join("*");
+       fruits[2] = "Kiwi";
+		document.getElementById("demo5").innerHTML = fruits.join("*");
+       delete fruits[3];
+		document.getElementById("demo6").innerHTML = fruits.join("*");
+
+    </script>
+</body>
+</html>

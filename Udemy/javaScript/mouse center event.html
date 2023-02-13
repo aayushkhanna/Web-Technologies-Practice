@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<img onmouseenter="biggif(this)" onmouseleave="normalgif(this)" border="0" src="gif.gif" alt="Smiley" width="32" height="32">
+
+<p>The function biggif() is triggered when the user moves the mouse pointer onto the image.</p>
+<p>The function normalgif() is triggered when the mouse pointer is moved out of the image.</p>
+
+<script>
+function biggif(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalgif(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+</body>
+</html>

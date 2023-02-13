@@ -1,0 +1,30 @@
+<!---------------with user input-------------->
+<html>
+<head>
+<script type="text/javascript">
+	function pallindrome(){
+	var r ;
+	var sum = 0; 
+	var temp;
+	var n = prompt("Enter number:");
+	temp = n;
+    while(n>0){
+    	r = n%10;
+    	n =parseInt(n/10);
+    	sum = (sum*10)+r;
+    	
+    }
+    if(temp == sum){
+    	alert("Pallindrome");
+    }
+    else{
+    	alert("Not Pallindrome");
+    }
+}
+</script>
+</head>
+<body>	
+	<button onclick="pallindrome()">check</button><br><br>
+</body>
+</html>
+
